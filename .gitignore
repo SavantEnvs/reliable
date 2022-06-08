@@ -24,6 +24,7 @@
 *.sublime-workspace
 
 # premake5 generated files
+premake5
 Makefile
 *.make
 

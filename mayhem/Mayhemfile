@@ -1,0 +1,7 @@
+image: ghcr.io/capuanob/reliable-fuzz:latest
+project: reliable
+target: reliable-fuzz
+
+cmds:
+  - cmd: /mayhem
+    libfuzzer: true
