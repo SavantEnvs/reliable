@@ -36,8 +36,8 @@ project "stats"
 project "fuzz"
     files { "fuzz.c", "reliable.c" }
 
-project "mayhem"
-	files { "mayhem-fuzz.c", "reliable.c" }
+project "reliable_fuzz"
+	files { "fuzz_packet.c", "reliable.c" }
 
 if os.ishost "windows" then
 
