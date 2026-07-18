@@ -1,0 +1,6 @@
+project: savantenvs/reliable
+target: reliable_fuzz_target
+
+cmds:
+  - cmd: /mayhem/reliable_fuzz_target
+    libfuzzer: true
