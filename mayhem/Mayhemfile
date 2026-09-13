@@ -1,0 +1,10 @@
+project: savantenvs/reliable
+target: reliable-fuzz-buggy-mhh-run-18
+# origin: https://app.mayhem.security/mayhemheroes/reliable/reliable-fuzz/18
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar   # accumulation — REQUIRED
+
+cmds:
+  - cmd: /mayhem/reliable_fuzz
+    libfuzzer: true
