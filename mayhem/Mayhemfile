@@ -1,0 +1,10 @@
+project: savantenvs/reliable
+target: reliable-fuzz-buggy-mhh-run-18
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar   # accumulation — REQUIRED
+  - file://mayhem/reliable-fuzz-buggy-mhh-run-18/testsuite                # per-target starter seeds (relative!)
+
+cmds:
+  - cmd: /mayhem/reliable_fuzz
+    libfuzzer: true
